@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categoría | Sabores de Japón</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main id="main-content" class="container">
+      <h1>Categoría: platos japoneses</h1>
+      <p>
+        Selección de preparaciones japonesas con técnicas distintas. Cada ficha enlaza a una página de detalle con
+        texto, galería y video.
+      </p>
+      <ul class="card-list category-list">
+        <li>
+          <article class="card card-clickable" data-card-href="det1.html">
+            <a href="det1.html" class="thumb-link">
+              <img
+                src="img/katsu-1.jpg"
+                width="640"
+                height="420"
+                loading="lazy"
+                alt="Bol de katsu don con tonkatsu laminado, cebolla y huevo sobre arroz"
+              />
+            </a>
+            <h2><a href="det1.html">Katsu don</a></h2>
+            <p>Bol de arroz con cerdo empanado, cebolla y huevo semicuajado.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card card-clickable" data-card-href="det2.html">
+            <a href="det2.html" class="thumb-link">
+              <img
+                src="img/sushi-1.jpg"
+                width="640"
+                height="420"
+                loading="lazy"
+                alt="Bandeja de sushi variado con nigiri y maki sobre tabla de madera"
+              />
+            </a>
+            <h2><a href="det2.html">Sushi</a></h2>
+            <p>Arroz avinagrado con pescado y vegetales en formato nigiri y maki.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card card-clickable" data-card-href="det1.html">
+            <a href="det1.html" class="thumb-link">
+              <img
+                src="img/ramen-1.jpg"
+                width="640"
+                height="420"
+                loading="lazy"
+                alt="Cuenco de ramen shoyu con fideos, chashu y huevo marinado"
+              />
+            </a>
+            <h2><a href="det1.html">Ramen</a></h2>
+            <p>Caldo aromático, fideo elástico y toppings para servicio en caliente.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card card-clickable" data-card-href="det2.html">
+            <a href="det2.html" class="thumb-link">
+              <img
+                src="img/gyoza-1.jpg"
+                width="640"
+                height="420"
+                loading="lazy"
+                alt="Gyozas doradas con base crujiente y salsa de soja"
+              />
+            </a>
+            <h2><a href="det2.html">Gyozas</a></h2>
+            <p>Masa fina rellena de carne y verduras, sellada a la plancha.</p>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

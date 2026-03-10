@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle 2 | Sabores de Japón</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main id="main-content" class="container">
+      <h1>Sushi y gyozas</h1>
+
+      <figure class="hero-image">
+        <img
+          src="img/sushi-1.jpg"
+          width="1200"
+          height="800"
+          alt="Bandeja de sushi variado con nigiri y maki sobre tabla de madera"
+        />
+        <figcaption>Surtido de sushi con cortes variados y arroz avinagrado de grano corto.</figcaption>
+      </figure>
+
+      <p>
+        El sushi exige precisión en el arroz: lavado, cocción y sazonado con vinagre, azúcar y sal. Con esa base se
+        forman nigiri y maki cuidando la presión para que la pieza quede firme sin compactarse en exceso.
+      </p>
+      <p>
+        Las gyozas se trabajan con masa fina y relleno jugoso para conseguir contraste entre base dorada y parte
+        superior al vapor. El sellado correcto evita fugas y mantiene el relleno en su punto.
+      </p>
+      <p>
+        Juntas, estas dos recetas permiten practicar montaje y presentación: cortes limpios en sushi y emplatado lineal
+        de gyozas con salsa ligera de soja y vinagre.
+      </p>
+
+      <section aria-labelledby="galeria-sushi-gyozas">
+        <h2 id="galeria-sushi-gyozas">Galería de platos emplatados</h2>
+        <ul class="gallery-grid">
+          <li>
+            <a class="glightbox gallery-link" data-gallery="frios-y-dulces-japon" href="img/sushi-2.jpg">
+              <img
+                src="img/sushi-2.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Sushi emplatado en bandeja de presentación"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="glightbox gallery-link" data-gallery="frios-y-dulces-japon" href="img/gyoza-2.jpg">
+              <img
+                src="img/gyoza-2.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Gyozas emplatadas con salsa de soja"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="glightbox gallery-link" data-gallery="frios-y-dulces-japon" href="img/gyoza-3.jpg">
+              <img
+                src="img/gyoza-3.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Gyozas doradas servidas en plato largo"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="video-sushi-gyozas">
+        <h2 id="video-sushi-gyozas">Video recomendado</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/OKapgEoPGIM"
+            title="Receta de gyozas"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

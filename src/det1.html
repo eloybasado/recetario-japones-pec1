@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle 1 | Sabores de Japón</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main id="main-content" class="container">
+      <h1>Katsu don y ramen</h1>
+
+      <figure class="hero-image">
+        <img
+          src="img/katsu-1.jpg"
+          width="1200"
+          height="800"
+          alt="Bol de katsu don con tonkatsu laminado, cebolla y huevo sobre arroz"
+        />
+        <figcaption>Katsu don tradicional con corte de cerdo empanado y huevo semicuajado.</figcaption>
+      </figure>
+
+      <p>
+        El katsu don parte de un tonkatsu crujiente, cortado en tiras y terminado en salsa suave con dashi, soja, mirin
+        y cebolla. Al final se añade huevo batido para conseguir una capa jugosa sobre el arroz.
+      </p>
+      <p>
+        En la misma línea salada, el ramen shoyu se construye sobre un caldo limpio y fideos cocidos al punto. El
+        equilibrio depende de controlar salinidad, temperatura y tiempos para que cada topping conserve textura.
+      </p>
+      <p>
+        El resultado de combinar estas dos recetas en una misma sección es un recorrido claro por dos pilares populares:
+        bol de arroz con fritura crujiente y sopa de fideos con caldo aromático.
+      </p>
+
+      <section aria-labelledby="galeria-katsudon-clasico">
+        <h2 id="galeria-katsudon-clasico">Galería de platos emplatados</h2>
+        <ul class="gallery-grid">
+          <li>
+            <a class="glightbox gallery-link" data-gallery="salados-japon" href="img/katsu-2.jpg">
+              <img
+                src="img/katsu-2.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Katsu don emplatado en primer plano"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="glightbox gallery-link" data-gallery="salados-japon" href="img/ramen-2.jpg">
+              <img
+                src="img/ramen-2.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Ramen emplatado con caldo shoyu y toppings"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="glightbox gallery-link" data-gallery="salados-japon" href="img/ramen-3.jpg">
+              <img
+                src="img/ramen-3.jpg"
+                width="600"
+                height="400"
+                loading="lazy"
+                alt="Ramen servido en bol cerámico con toppings"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="video-katsudon-clasico">
+        <h2 id="video-katsudon-clasico">Video recomendado</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/AtgqMOi2Ze4"
+            title="Receta de katsu don"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

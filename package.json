@@ -1,12 +1,9 @@
 {
   "name": "pec1",
   "version": "1.0.0",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel:dev": "parcel",
-    "parcel:build": "parcel build",
+    "parcel:dev": "parcel src/index.html src/categoria.html src/det1.html src/det2.html src/links.html",
+    "parcel:build": "parcel build src/index.html src/categoria.html src/det1.html src/det2.html src/links.html",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
@@ -16,9 +13,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "autoprefixer": "^10.4.27",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.16.4",
+    "postcss-custom-media": "^12.0.1",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.3"
+  },
+  "dependencies": {
+    "glightbox": "^3.3.1"
   }
 }
