@@ -250,6 +250,7 @@ main {
 }
 
 .card {
+  position: relative;
   background: var(--color-surface);
   border: 0.1rem solid #5f4741;
   border-radius: 0.4rem;
@@ -261,8 +262,12 @@ main {
     border-color 0.2s ease;
 }
 
-.card-clickable {
-  cursor: pointer;
+
+.card h2 a::after,
+.card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
 }
 
 .card:hover {
@@ -276,19 +281,14 @@ main {
   margin-top: 0.8rem;
 }
 
-.thumb-link {
-  display: block;
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
 .category-list .card {
   padding: 0.75rem;
 }
 
-.category-list .thumb-link img {
+.category-list .card img {
   width: 100%;
   aspect-ratio: 16 / 10;
+  border-radius: 0.25rem;
   object-fit: cover;
 }
 

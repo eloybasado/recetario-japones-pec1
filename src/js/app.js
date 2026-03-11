@@ -34,23 +34,3 @@ if (menuButton && nav) {
 GLightbox({
   selector: '.glightbox',
 });
-
-document.querySelectorAll('.card-clickable').forEach(function (card) {
-  card.addEventListener('click', function (event) {
-    if (event.target.closest('a')) {
-      return;
-    }
-
-    const href = card.getAttribute('data-card-href');
-    const reload = card.getAttribute('data-card-reload') === 'true';
-
-    if (href) {
-      window.location.href = href;
-      return;
-    }
-
-    if (reload) {
-      window.location.reload();
-    }
-  });
-});
