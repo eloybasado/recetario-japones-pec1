@@ -23,7 +23,17 @@
         <ul class="home-gallery">
           <li>
             <a class="mini-dish mini-dish-link" href="det1.html">
-              <img src="img/katsu-1.jpg" width="640" height="420" loading="lazy" alt="Bol de katsu don con tonkatsu" />
+              <picture>
+                <source srcset="img/katsu-1.jpg?as=avif" type="image/avif" />
+                <source srcset="img/katsu-1.jpg?as=webp" type="image/webp" />
+                <img
+                  src="img/katsu-1.jpg"
+                  width="640"
+                  height="420"
+                  loading="lazy"
+                  alt="Bol de katsu don con tonkatsu"
+                />
+              </picture>
               <h3>Katsu don</h3>
             </a>
           </li>
