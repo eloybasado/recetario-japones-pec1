@@ -189,6 +189,36 @@ main {
   z-index: 1;
 }
 
+.hero-steam-wrap {
+  width: clamp(7.5rem, 22vw, 11rem);
+  margin-top: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-steam {
+  width: 100%;
+  height: auto;
+}
+
+.hero-steam path {
+  fill: none;
+  stroke: #ffd6c6;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation: steam-draw 2.8s ease-out infinite;
+}
+
+.hero-steam .steam-b {
+  animation-delay: 0.2s;
+}
+
+.hero-steam .steam-c {
+  animation-delay: 0.4s;
+}
+
 .feature-grid {
   display: grid;
   gap: 1rem;
@@ -230,6 +260,16 @@ main {
   object-fit: cover;
 }
 
+.mini-dish-clip img {
+  clip-path: polygon(0 0, 90% 0, 100% 16%, 96% 72%, 84% 100%, 14% 96%, 0 82%, 4% 20%);
+  transition: clip-path 0.25s ease;
+}
+
+.mini-dish-clip:hover img,
+.mini-dish-clip:focus-visible img {
+  clip-path: polygon(0 0, 100% 0, 100% 12%, 100% 80%, 88% 100%, 10% 100%, 0 86%, 0 18%);
+}
+
 .mini-dish h3 {
   margin: 0;
   padding: 0.7rem 0.85rem;
@@ -261,7 +301,6 @@ main {
     box-shadow 0.2s ease,
     border-color 0.2s ease;
 }
-
 
 .card h2 a::after,
 .card h3 a::after {
@@ -390,6 +429,39 @@ main {
   padding-top: 0;
   font-size: 0.9rem;
   color: var(--color-ink-soft);
+}
+
+@keyframes steam-draw {
+  0% {
+    stroke-dashoffset: 120;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.85;
+  }
+
+  65% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -36;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-steam path {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 0.85;
+  }
+
+  .mini-dish-clip img {
+    transition: none;
+  }
 }
 
 @media (--tablet) {
