@@ -261,13 +261,13 @@ main {
 }
 
 .mini-dish-clip img {
-  clip-path: polygon(0 0, 90% 0, 100% 16%, 96% 72%, 84% 100%, 14% 96%, 0 82%, 4% 20%);
+  clip-path: polygon(0 0, 92% 0, 100% 10%, 100% 84%, 94% 100%, 8% 100%, 0 90%, 0 16%);
   transition: clip-path 0.25s ease;
 }
 
 .mini-dish-clip:hover img,
 .mini-dish-clip:focus-visible img {
-  clip-path: polygon(0 0, 100% 0, 100% 12%, 100% 80%, 88% 100%, 10% 100%, 0 86%, 0 18%);
+  clip-path: polygon(0 0, 98% 0, 100% 2%, 100% 98%, 98% 100%, 2% 100%, 0 98%, 0 4%);
 }
 
 .mini-dish h3 {
